@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Plotline",
+      "hasCanvas": false,
+      "bodyTextLen": 472,
+      "bodyTextHash": "5f877a6bfa45a56d7ca3b1557fe463b48bea0079eca9099250c27026387a252a",
+      "bodyTextPrefix": "MEASURED LANDSCAPE Plotline A lot with real dimensions. Trees an",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Plotline",
+      "hasCanvas": false,
+      "bodyTextLen": 472,
+      "bodyTextHash": "5f877a6bfa45a56d7ca3b1557fe463b48bea0079eca9099250c27026387a252a",
+      "bodyTextPrefix": "MEASURED LANDSCAPE Plotline A lot with real dimensions. Trees an",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
