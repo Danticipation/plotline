@@ -62,10 +62,13 @@ The dev server listens on port **8080**.
 | --- | --- |
 | `npm run dev` | Vite dev server |
 | `npm run build` | Production build, then database migrations if a database is configured |
-| `npm run typecheck` | `tsc --noEmit` |
+| `npm run plants:import` | Validate `data/plants.v1.json` and regenerate `src/lib/plants.generated.ts` |
+| `npm run typecheck` | Regenerates the plant catalog, then `tsc --noEmit` |
 | `npm test` | Script and library tests |
 | `npm run lint` | ESLint |
 | `npm run preview` | Serve the production build |
+
+Plant rows live in `data/plants.v1.json`. Edit that file and run `npm run plants:import` (or `npm run typecheck`, which imports first). Do not hand-edit `src/lib/plants.generated.ts`. Optional climate tags expand into avoid/caution; an explicit note on the row wins.
 
 The planner does not require a database. Auth and Postgres wiring in `src/lib` is unused by the lot itself.
 
@@ -74,7 +77,8 @@ The planner does not require a database. Auth and Postgres wiring in `src/lib` i
 ```text
 src/routes/            app shell and the home route
 src/components/        studio, plan canvas, plant rail, inspector, setup, ask, view
-src/lib/plants.ts      plant catalog
+src/lib/plants.ts      catalog API (`getPlant`, labels); the list is generated
+data/plants.v1.json    plant catalog source of truth
 src/lib/climate.ts     cities, zones, climate labels
 src/lib/advice.ts      yes / marginal / no
 src/lib/advise.functions.ts   Ask (server)
